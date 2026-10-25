@@ -29,7 +29,7 @@ I'm a Surveying & Geoinformatics student in Nigeria interested in **GIS automati
 | **BLUEPRIORITY — TideVector** | Climate-smart coastal restoration and investment-priority intelligence concept | Coastal GIS, environmental data, decision support |
 | **[SpatialRise](https://spatialrise-insights.vercel.app/)** | A platform for geospatial news, insights, tools, and datasets | Web development, geospatial communication |
 | **[FSS Oyo Interactive Web Map](https://brilliant-travesseiro-487787.netlify.app/)** | Interactive web mapping exploration | WebGIS, web mapping |
-| **SpatialRise GeoJSON QA** | Lightweight command-line checks for GeoJSON datasets (publication in progress) | Python, GeoJSON, geospatial QA |
+| **[SpatialRise GeoJSON QA](projects/spatialrise-geojson-qa/)** | Open-source Python tool for checking GeoJSON data quality; includes sample data, unit tests and CI | Python, GeoJSON, geospatial QA |
 
 > Some projects are research or innovation concepts. Their source code and datasets will be shared only where I have the rights and permission to publish them.
 
