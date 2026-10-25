@@ -1,0 +1,24 @@
+name: SpatialRise GeoJSON QA checks
+
+on:
+  push:
+    paths:
+      - 'projects/spatialrise-geojson-qa/**'
+      - '.github/workflows/spatialrise-geojson-qa.yml'
+  pull_request:
+    paths:
+      - 'projects/spatialrise-geojson-qa/**'
+      - '.github/workflows/spatialrise-geojson-qa.yml'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Run Python unit tests
+        run: python -m unittest discover -s projects/spatialrise-geojson-qa/tests -v
+      - name: Validate example GeoJSON
+        run: python projects/spatialrise-geojson-qa/qa.py projects/spatialrise-geojson-qa/sample_data/sample_sites.geojson --required-field name --strict
